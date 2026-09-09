@@ -64,8 +64,7 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 ## Support the project
 
 If this saved you from a fake drive — or you just want to help a solo developer
-keep building — you can leave a tip: **[donation link here]**.
-
+keep building — you can leave a tip: ko-fi.com/digital8dreamsz
 ## License
 
 MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Digital8Dreamz.
