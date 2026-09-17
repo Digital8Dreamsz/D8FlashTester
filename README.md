@@ -11,7 +11,8 @@ Tester writes a verifiable pattern across the drive and reads it back with the
 OS cache defeated, so a fake has nowhere to hide.
 
 Its guiding rule: **it never reports anything it did not actually measure.**
-
+Inspired by the will for no one else to fall victim. Personal experience money loss and even worse Data loss
+I hope it helps.
 ---
 
 ## What it does
