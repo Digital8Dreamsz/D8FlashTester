@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyTitle>D8 Flash Tester</AssemblyTitle>
+    <Product>D8 Flash Tester</Product>
+    <Company>Digital8Dreamz</Company>
+    <Version>2.2.0</Version>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <!-- Single-file, self-contained publish settings.
+       These only take effect on `dotnet publish` (they are ignored by a plain
+       build / F5), so your normal Debug workflow in bin\Debug\net9.0-windows\
+       is unchanged. -->
+  <PropertyGroup>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <!-- WinForms is NOT trim-safe (reflection), so trimming stays OFF. -->
+    <PublishTrimmed>false</PublishTrimmed>
+    <!-- Keep debug symbols out of the published folder so it's a clean single .exe. -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="app.ico" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
